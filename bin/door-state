@@ -1,0 +1,4 @@
+#!/bin/bash
+# By lapentab@mit.edu
+
+curl --silent 'http://sipb-door.scripts.mit.edu/' | sed -e 's/<[^>][^>]*>//g' -e '/^ *$/d'

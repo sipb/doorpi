@@ -20,7 +20,7 @@ LOGFILE = "foo.txt"
 GPIO.setmode(GPIO.BOARD)
 
 # Declare the INPUT_PIN for use as an input
-GPIO.setup(INPUT_PIN, GPIO.IN)
+GPIO.setup(INPUT_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 """
 # Initialize kerberos and afs authentication
@@ -67,8 +67,8 @@ if current_state == None:
 if last_time == None:
 	last_time = datetime.datetime.strptime(output.split(',')[3], DATE_FORMAT)
 
-#input_value = GPIO.input(INPUT_PIN)
-input_value = random.choice([0,1])
+input_value = GPIO.input(INPUT_PIN)
+#input_value = random.choice([0,1])
 
 
 if input_value != current_state or force_log == True:

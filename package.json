@@ -1,0 +1,15 @@
+{
+  "name": "sipb-door",
+  "version": "0.1.0",
+  "description": "",
+  "main": "sensor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Firescar96",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "rpi-gpio": "^0.7.0"
+  }
+}
